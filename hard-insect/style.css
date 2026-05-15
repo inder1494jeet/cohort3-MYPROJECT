@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.half1 {
+  background-color: #FEFEFE;
+  width: 50%;
+  height: 100%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.half1 .nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7rem;
+}
+.half1 .nav h1 {
+  font-size: 2.3rem;
+  opacity: 0.8;
+}
+.half1 .nav input {
+  border-radius: 1.5rem;
+  background-color: #EFEFEF;
+  height: 50px;
+  width: 21rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 1px solid #ededed;
+}
+.half1 .main {
+  display: flex;
+  justify-content: flex-start;
+  gap: 9rem;
+  align-items: center;
+}
+.half1 .main .head {
+  writing-mode: vertical-rl;
+  direction: rtl;
+  transform: scale(-1);
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.half1 .main .section ul {
+  display: flex;
+  flex-direction: column;
+}
+.half1 .main .section ul li::marker {
+  color: #a3322a;
+  font-size: 20px;
+}
+.half1 .main .section ul li h2 {
+  font-weight: 600;
+}
+.half1 .main .section ul p {
+  font-size: 1.3rem;
+  opacity: 0.7;
+  font-weight: 500;
+}
+.half1 .main .section ul {
+  gap: 1rem;
+}
+.half1 .main .section ul .line {
+  height: 2px;
+  background-color: #c9cac9;
+}
+
+.img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+}
+.img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.half2 {
+  background-color: #bc3b32;
+  width: 50%;
+  height: 100%;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.half2 .nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.half2 .nav ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.half2 .m {
+  display: flex;
+  justify-content: center;
+}
+.half2 .m h1 {
+  width: 50px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
