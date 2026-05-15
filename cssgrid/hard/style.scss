@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+    gap: 2rem;
+    .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+   // background-color: red;
+   h1{
+    font-size: 1.2rem;
+    font-weight: 900;
+   }
+    .navmain{
+        ul{
+
+            display: none;
+        }
+        img{
+            height: 3rem;
+        }
+    }
+    .iconnav{
+        display: flex;
+        img{
+            height: 2rem;
+        }
+    }
+}
+    .head{
+        
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+      //  gap: .2rem;
+        justify-content: center;
+        align-items: center;
+        .headm{
+            display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.7rem;
+        img{
+            height: 4vmax;
+        }
+        h1{
+            font-size: 2.5vmax;
+        }
+        }
+        h1{
+            font-size: 2.5vmax;
+        }
+    }
+    .mn{
+        width: 100%;
+        //min-height:100%;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        gap: 1rem;
+        .box{
+            display: inline-block;
+            width: 25vh;
+            height:25vh;
+            background-color: red;
+            border-radius: 2rem;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 2rem;
+            }
+        }
+    }
+    .last{
+        width: 100%;
+       // height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+       .mid{
+        button{
+            padding: 1rem 2rem;
+            background-color: rgb(255, 255, 255);
+            border-radius: 1rem;
+            border: 1px solid black;
+        }
+       
+       }
+     .right{
+        display:none;
+            
+        }
+        
+      }
+}
+@media (min-width:820px) {
+    .main{
+      //  background-color: red;
+      padding: 2rem;
+      .nav{
+        h1{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .navmain{
+            ul{
+                display: inline-block;
+                display: flex;
+                list-style: none;
+              //  width: 40%;
+              //  justify-content: space-between;
+              gap: 3rem;
+                li{
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                }
+            }
+            img{
+                display: none;
+            }
+        }
+      }
+      .head{
+        justify-content: space-between;
+        .headm{
+            gap: 3rem;
+            img{
+                height: 6rem;
+            }
+            h1{
+                font-size: 5vmax;
+            }
+        }
+        h1{
+            font-size: 5vmax;
+        }
+      }
+      .mn{
+        padding: 2rem;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 16% 18% 20% 18% 16%  ;
+        grid-template-rows: 7% 17% 17% 13% 19% 20% 7%;
+        grid-template-areas: 
+        ". . center . . "
+        ". leftmidtop center rightmidtop ."
+        "lefttop leftmidtop center rightmidtop righttop"
+        "lefttop leftmidbottom center rightmidtop righttop"
+        "lefttop leftmidbottom center rightmidbottom righttop"
+        ". leftmidbottom center rightmidbottom ."
+        ". . center . ."
+        ;
+        gap:1rem;
+        .box{
+            width:100%;
+            height: 100% ;
+        }
+        .lefttop{
+            grid-area: lefttop;
+        }
+        .leftmidtop{
+            grid-area: leftmidtop;
+        }
+        .leftmidbottom{
+            grid-area: leftmidbottom;
+        }
+        .rightmidtop{
+            grid-area: rightmidtop;
+        }
+        .rightmidbottom{
+            grid-area: rightmidbottom;
+        }
+        .righttop{
+            grid-area: righttop;
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h1{
+                    font-weight: 500;
+                    font-size: 1.7rem;
+                }
+            }
+        }
+        .center{
+            grid-area: center;
+        }
+      }
+      .last{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .right{
+            display: block;
+        }
+        .left{
+            width: 30% ;
+        }
+        .mid{
+            button{
+                padding: 1rem 4rem;
+            }
+        }
+        .right{
+            .top{
+                display: flex;
+                gap: .5rem;
+                justify-content: center;
+                align-items: center;
+                p{
+                    font-size: 1rem;
+                }
+                h6{
+                    font-size: 1rem;
+                }
+            }
+            .bottom{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                h1{
+                    font-size: 5rem;
+                }
+                h2{
+                    width: 50%;
+                    font-weight: 700;
+                }
+            }
+        }
+      }
+      
+    }
+}

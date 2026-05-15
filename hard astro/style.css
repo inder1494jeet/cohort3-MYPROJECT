@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  width: 100%;
+  background-color: #ef8b3f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: #fbf4ed;
+  border-radius: 4rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main nav {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+main nav h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+main nav h1 span {
+  color: red;
+}
+main nav .navt ul {
+  display: none;
+}
+main nav .navt img {
+  height: 1.5rem;
+}
+main nav .shop img {
+  height: 1.5rem;
+}
+main hr {
+  opacity: 0.2;
+}
+main .main {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+main .main .left {
+  z-index: 9;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+  gap: 0.5rem;
+}
+main .main .left .new {
+  font-size: 0.7rem;
+  color: #ef8b3f;
+  font-weight: 700;
+}
+main .main .left h1 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-left: 0.1rem;
+}
+main .main .left h1 span {
+  color: #ef8b3f;
+}
+main .main .left h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+main .main .left .desc {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+main .main .left p {
+  font-size: 0.5rem;
+}
+main .main .left .redmore {
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+main .main .left .material {
+  font-size: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+main .main .right {
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  gap: 0.5rem;
+  height: 20%;
+  line-height: 0.8;
+  align-items: center;
+}
+main .main .right h2 {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+main .main .right .size {
+  display: flex;
+  gap: 0.4rem;
+}
+main .main .right .size div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: #f5eee6;
+  border-radius: 0.3rem;
+}
+main .main .right p {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+main .main .right h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+main .main .right .colori {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+main .main .right .colori div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: #e3dad6;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+main .main .right .colori div img {
+  height: 2rem;
+}
+main .main .right button.add {
+  background-color: transparent;
+  border-radius: 0.1rem solid rgb(72, 72, 72);
+  padding: 0.2rem 0.3rem;
+  border-radius: 1rem;
+}
+main .main .right button.a {
+  background-color: transparent;
+  color: white;
+  background-color: #ef8b3f;
+  padding: 0.2rem 1.5rem;
+  border-radius: 1rem;
+}
+main .main .img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+main .main .img img {
+  height: 20rem;
+  opacity: 0.7;
+}
+main .down {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .down .qua {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .down .qua ul {
+  display: flex;
+  list-style: none;
+  gap: 0.7rem;
+  font-size: 0.8rem;
+}
+main .down .b {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 1rem;
+}
+main .down .boxes {
+  background-color: #f5eae0;
+  width: 100%;
+  height: fit-content;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+main .down .boxes .img {
+  height: fit-content;
+  width: fit-content;
+  height: fit-content;
+}
+main .down .boxes .img img {
+  height: 5rem;
+}
+main .down .boxes .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+}
+main .down .boxes .text h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+main .down .boxes .text p {
+  width: 70%;
+  font-size: 0.5rem;
+  font-weight: 400;
+}
+main footer {
+  background-color: #f5eae0;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+main footer .f {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+main footer .f div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+main footer .f div h3 {
+  font-size: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+main footer .f div p {
+  font-size: 0.4rem;
+}
+
+@media (min-width: 950px) {
+  body, html {
+    padding: 0.5rem;
+  }
+  body main, html main {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  body main nav h1, html main nav h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  body main nav .navt ul, html main nav .navt ul {
+    display: block;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  body main nav .navt ul li, html main nav .navt ul li {
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  body main nav .navt img, html main nav .navt img {
+    display: none;
+  }
+  body main .main, html main .main {
+    line-height: 0.9;
+  }
+  body main .main hr, html main .main hr {
+    width: 60%;
+  }
+  body main .main .left, html main .main .left {
+    margin-left: 3rem;
+    width: 40%;
+    gap: 1rem;
+  }
+  body main .main .left .h, html main .main .left .h {
+    line-height: 1;
+  }
+  body main .main .left h1, html main .main .left h1 {
+    width: 70%;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  body main .main .left h3, html main .main .left h3 {
+    font-size: 1.2rem;
+    font-family: 900;
+  }
+  body main .main .left .desc, html main .main .left .desc {
+    font-size: 1rem;
+  }
+  body main .main .left p, html main .main .left p {
+    width: 50%;
+    font-size: 1rem;
+  }
+  body main .main .left .redmore, html main .main .left .redmore {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  body main .main .left .material, html main .main .left .material {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  body main .main .right, html main .main .right {
+    gap: 1.3rem;
+    width: 25%;
+    line-height: 1;
+  }
+  body main .main .right h2, html main .main .right h2 {
+    font-size: 1rem;
+  }
+  body main .main .right .size div, html main .main .right .size div {
+    width: 3vw;
+    height: 3vw;
+  }
+  body main .main .right p, html main .main .right p {
+    font-size: 1.2rem;
+  }
+  body main .main .right h3, html main .main .right h3 {
+    font-size: 1.2rem;
+  }
+  body main .main .right .colori div, html main .main .right .colori div {
+    width: 5vw;
+    height: 5vw;
+  }
+  body main .main .right .colori div img, html main .main .right .colori div img {
+    height: 5vw;
+  }
+  body main .main .right .add, html main .main .right .add {
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+  }
+  body main .main .right .a, html main .main .right .a {
+    padding: 1rem 4.5rem;
+    border-radius: 2rem;
+  }
+  body main .main .img, html main .main .img {
+    height: 37vw;
+    z-index: 10;
+    top: 55%;
+  }
+  body main .main .img img, html main .main .img img {
+    height: 100%;
+    opacity: 1;
+    z-index: 10;
+  }
+  body main .down, html main .down {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  body main .down .qua ul, html main .down .qua ul {
+    font-size: 1.1rem;
+    gap: 2rem;
+  }
+  body main .down .b, html main .down .b {
+    display: flex;
+    background-color: #f5eae0;
+    border-radius: 2rem;
+  }
+  body main .down .b .boxes, html main .down .b .boxes {
+    background-color: transparent;
+    display: flex;
+  }
+  body main .down .b .boxes .img img, html main .down .b .boxes .img img {
+    height: 8rem;
+  }
+  body main .down .b .boxes .text, html main .down .b .boxes .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body main .down .b .boxes .text h3, html main .down .b .boxes .text h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  body main .down .b .boxes .text p, html main .down .b .boxes .text p {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  body main footer .f h3, html main footer .f h3 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  body main footer .f p, html main footer .f p {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    width: 80%;
+  }
+}
+@media (min-width: 1250px) {
+  main .down .b .boxes {
+    display: block;
+    display: flex;
+    background-color: red;
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
