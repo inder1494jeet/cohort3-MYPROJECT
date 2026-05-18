@@ -1,0 +1,880 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  padding-inline: 5rem;
+}
+main nav {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  gap: 35%;
+}
+main nav .left {
+  height: 5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+main nav .left .img img {
+  height: 1.7rem;
+}
+main nav .left .bo {
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+main nav .left .button {
+  padding: 0.3rem 0.5rem;
+  background-color: #EdDED5;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+main nav .left .button .t1 {
+  position: absolute;
+  bottom: 22%;
+  transition: all 0.3s ease;
+}
+main nav .left .button .t2 {
+  position: absolute;
+  top: 90%;
+  transition: all 0.3s ease;
+}
+main nav .left .button:hover {
+  cursor: pointer;
+}
+main nav .left .button:hover .t1 {
+  bottom: 99%;
+  opacity: 0.5;
+}
+main nav .left .button:hover .t2 {
+  top: 22%;
+}
+main nav .right {
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  gap: 2rem;
+}
+main nav .right .content ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+main nav .right .content ul li {
+  position: relative;
+}
+main nav .right .content ul li::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  position: absolute;
+  background-color: black;
+  left: 50%;
+  bottom: 0;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%);
+}
+main nav .right .content ul li:hover::after {
+  width: 110%;
+}
+main nav .right .content ul li:hover {
+  cursor: pointer;
+}
+main nav .right .b {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+main nav .right .b p {
+  display: flex;
+  gap: 0.5REM;
+}
+main nav .right .b p span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EdDED5;
+  width: 1rem;
+  border-radius: 3rem;
+}
+main nav .right .b button {
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  background-color: white;
+  font-size: 1rem;
+  border: 1px solid black;
+  transition: all ease 0.2s;
+}
+main nav .right .b button:hover {
+  background-color: black;
+  color: white;
+}
+main hr {
+  opacity: 0.1;
+}
+main .main {
+  height: calc(100% - 5rem);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25vh;
+  gap: 2.5rem;
+}
+main .main h1 {
+  font-size: 6rem;
+  font-weight: 600;
+}
+main .main p {
+  width: 37%;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+main .main .button {
+  height: 3.5rem;
+  width: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+main .main .button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+main .mar {
+  padding-top: 8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  gap: 4rem;
+}
+main .mar .marquee {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+main .mar .marquee .box {
+  display: flex;
+  animation: marquee 15s linear infinite;
+  transition: all 0.5s ease;
+  gap: 7rem;
+}
+main .mar .marquee .box img {
+  height: 3rem;
+}
+main .mar .box {
+  display: flex;
+  gap: 2rem;
+}
+main .mar .box .b {
+  height: 350px;
+  width: fit-content;
+  background-color: #F4F4F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 3rem;
+}
+main .mar .box .b h1 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+main .mar .box .b p {
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+main .mar .box .b a {
+  color: black;
+}
+main .hov {
+  width: 100%;
+  height: fit-content;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .hov .top {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .hov .top h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+main .hov .bo {
+  width: 100%;
+  height: fit-content;
+}
+main .hov .bo .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .hov .bo .text button {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: white;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+}
+main .hov .bo .text button:hover {
+  background-color: black;
+  color: white;
+}
+main .hov .bo .b {
+  height: 50%;
+  width: 100%;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  justify-content: center;
+}
+main .hov .bo .b .pages {
+  height: 60vh;
+  overflow: hidden;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .hov .bo .b .pages .img {
+  height: 85%;
+  width: 100%;
+  background-color: red;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+main .hov .bo .b .pages .img img {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 1s ease;
+}
+main .hov .bo .b .pages .t {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .hov .bo .b .pages .t h1 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+main .hov .bo .b .pages .t button {
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  background-color: white;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+}
+main .hov .bo .b .pages .t button:hover {
+  background-color: black;
+  color: white;
+}
+main .hov .bo .b .img:hover img {
+  transform: scale(1.2);
+}
+main .ourvalues {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 4rem;
+}
+main .ourvalues .top {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .ourvalues .top h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+main .ourvalues .design {
+  padding-top: 2rem;
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  grid-template-areas: "a b c ." ". d e f";
+}
+main .ourvalues .design .dabe1 {
+  height: 50vh;
+  width: 100%;
+  background-color: #F4F4F5;
+  grid-area: a;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .ourvalues .design .dabe1 .t {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .ourvalues .design .dabe1 .t h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+main .ourvalues .design .dabe1 .t p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+main .ourvalues .design .dabe1 .b button {
+  padding: 1rem 2rem;
+  background-color: black;
+  color: white;
+  border-radius: 2rem;
+}
+main .ourvalues .design .dabe2 {
+  height: 50vh;
+  background-color: #F1F6F5;
+  grid-area: b;
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .ourvalues .design .dabe2 .t {
+  display: flex;
+  flex-direction: column;
+}
+main .ourvalues .design .dabe2 .t p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 80%;
+  text-transform: uppercase;
+}
+main .ourvalues .design .dabe2 .b p {
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 70%;
+  text-transform: uppercase;
+}
+main .ourvalues .design .dabe3 {
+  height: 50vh;
+  background-color: #F8F8F8;
+  grid-area: c;
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .ourvalues .design .dabe3 .t {
+  display: flex;
+  flex-direction: column;
+}
+main .ourvalues .design .dabe3 .t p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 80%;
+  text-transform: uppercase;
+}
+main .ourvalues .design .dabe3 .b p {
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 70%;
+  text-transform: uppercase;
+}
+main .ourvalues .design .dabe4 {
+  height: 50vh;
+  background-color: #F8F8F8;
+  grid-area: d;
+  padding: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .ourvalues .design .dabe4 .t {
+  display: flex;
+  flex-direction: column;
+}
+main .ourvalues .design .dabe4 .t p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 80%;
+  text-transform: uppercase;
+}
+main .ourvalues .design .dabe4 .b p {
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 70%;
+  text-transform: uppercase;
+}
+main .ourvalues .design .dabe5 {
+  height: 50vh;
+  background-color: #F8EDE3;
+  grid-area: e;
+  padding: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .ourvalues .design .dabe5 .t {
+  display: flex;
+  flex-direction: column;
+}
+main .ourvalues .design .dabe5 .t p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 80%;
+  text-transform: uppercase;
+}
+main .ourvalues .design .dabe5 .b p {
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 70%;
+  text-transform: uppercase;
+}
+main .ourvalues .design .dabe6 {
+  height: 50vh;
+  background-color: #FFFAE7;
+  grid-area: f;
+  padding: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .ourvalues .design .dabe6 .t {
+  display: flex;
+  flex-direction: column;
+}
+main .ourvalues .design .dabe6 .t p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 80%;
+  text-transform: uppercase;
+}
+main .ourvalues .design .dabe6 .b p {
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 70%;
+  text-transform: uppercase;
+}
+main .ourvalues .down {
+  padding-top: 4rem;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+main .ourvalues .down h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  width: 45%;
+}
+main .ourvalues .down .b {
+  display: flex;
+  width: 50%;
+  gap: 2rem;
+}
+main .ourvalues .down .b p {
+  font-size: 1.1rem;
+  opacity: 0.6;
+}
+main .ourteam {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .ourteam .top {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .ourteam .top h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+main .ourteam .teamexp {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .ourteam .teamexp .t {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .ourteam .teamexp .t h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+main .ourteam .teamexp .t button {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  background-color: white;
+}
+main .ourteam .teamexp .bottom {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  gap: 2rem;
+}
+main .ourteam .teamexp .bottom .diff {
+  background-color: #F1F6F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  width: 60%;
+}
+main .ourteam .teamexp .bottom .diff .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .ourteam .teamexp .bottom .diff .top h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main .ourteam .teamexp .bottom .diff .top h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+main .ourteam .teamexp .bottom .diff .top p {
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+main .ourteam .teamexp .bottom .diff .botto button {
+  padding: 1rem 1.7rem;
+  background-color: black;
+  color: white;
+  border-radius: 2rem;
+  border: none;
+}
+main .ourteam .teamexp .bottom .worker {
+  height: 100%;
+  width: 100%;
+}
+main .ourteam .teamexp .bottom .worker .img {
+  height: 90%;
+  width: 100%;
+}
+main .ourteam .teamexp .bottom .worker .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+main .ourteam .teamexp .bottom .worker .name {
+  padding: 1rem;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .ourteam .teamexp .bottom .worker .name h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+main .ourteam .teamexp .bottom .worker .name button {
+  padding: 0.5rem 1.5rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2rem;
+}
+main .ourteam .lower {
+  width: 100%;
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .ourteam .lower .to {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7rem;
+  padding: 2rem;
+}
+main .ourteam .lower .to .img img {
+  text-align: end;
+  display: flex;
+  justify-content: end;
+}
+main .ourteam .lower .to .text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .ourteam .lower .to .text h1 {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+main .ourteam .lower .to .text p {
+  width: 110%;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+main .ourteam .lower .l {
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0.1;
+}
+main .ourteam .lower .line {
+  height: 1px;
+  width: 60%;
+  background-color: black;
+}
+main .get {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+main .get .touch {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+  background-color: #F1F6F5;
+}
+main .get .touch .top {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+}
+main .get .touch .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60%;
+}
+main .get .touch .bottom h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+main .get .touch .bottom p {
+  font-size: 1.5rem;
+  width: 70%;
+  font-weight: 400;
+}
+main .get .touch .bottom button {
+  padding: 1rem 2rem;
+  width: fit-content;
+  border-radius: 2rem;
+  background-color: black;
+  color: white;
+  border: none;
+}
+main .blog {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .blog .top {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .blog .top h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+main .blog .content {
+  display: flex;
+  justify-content: space-between;
+}
+main .blog .content h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+main .blog .content button {
+  padding: 1rem 2rem;
+  background-color: white;
+  border-radius: 2rem;
+  border: 1px solid black;
+}
+main .blog .flex {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  gap: 2rem;
+}
+main .blog .flex .adv {
+  height: 100%;
+  width: 100%;
+}
+main .blog .flex .adv .img {
+  width: 100%;
+  height: 85%;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+main .blog .flex .adv .img img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+main .blog .flex .adv .img img:hover {
+  transform: scale(1.2);
+}
+main .blog .flex .adv .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .blog .flex .adv .text p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+main .blog .flex .adv .text .read {
+  font-size: 1rem;
+  font-weight: 300;
+}
+main .last {
+  width: 100%;
+  padding: 4rem;
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+main .last p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+main .last ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+}
+main .last ul li {
+  font-size: 1rem;
+}
+main .last ul button {
+  padding: 1.2rem 2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+}
+main footer {
+  width: 100%;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main footer .line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  opacity: 0.1;
+}
+main footer .text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main footer .text .top span {
+  font-size: 1rem;
+  color: rgb(179, 178, 178);
+}
+main footer .text .top em {
+  font-size: 1rem;
+  font-weight: 500;
+}
+main footer .text .right {
+  display: flex;
+  gap: 1rem;
+}
+main footer .text .right p {
+  color: rgb(179, 178, 178);
+  font-size: 1rem;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
