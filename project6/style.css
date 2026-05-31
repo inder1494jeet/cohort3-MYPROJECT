@@ -1,17 +1,1502 @@
-/* Error: unmatched "}".
- *      ,
- * 1126 | }
- *      | ^
- *      '
- *   style.scss 1126:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: unmatched "}".\a      \2577 \a 1126 \2502  }\d\a      \2502  ^\a      \2575 \a   style.scss 1126:1  root stylesheet';
+@font-face {
+  font-family: reckless;
+  src: url(./RecklessCondensedS-TRIAL-Book.woff);
 }
+@font-face {
+  font-family: midnight;
+  src: url(./midnight-sans-rd-12-semibold-trial.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+main .main {
+  background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=1350.0);
+  background-size: 78%;
+  background-repeat: no-repeat;
+  background-position: 120% 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 100%;
+  height: 95%;
+  background-color: #00A3D9;
+}
+main .main .upper {
+  padding: 0.3rem 1rem;
+  background-color: #2A2857;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+main .main .upper p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  word-spacing: 0.3rem;
+}
+main .main .nav {
+  width: 100%;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+main .main .nav nav {
+  font-family: reckless;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFEFB;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+main .main .nav nav .left {
+  display: flex;
+  width: 33%;
+  align-items: center;
+}
+main .main .nav nav .left ul {
+  width: 60%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+main .main .nav nav .left .menu {
+  display: none;
+}
+main .main .nav nav .right {
+  display: flex;
+  width: 33%;
+  align-items: center;
+  gap: 1rem;
+}
+main .main .nav nav .right ul {
+  width: 80%;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  font-weight: 400;
+}
+main .content {
+  padding: 2rem;
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 80%;
+  width: 34%;
+  gap: 1.2rem;
+}
+main .content h1 {
+  font-size: 5.3rem;
+  color: white;
+  font-weight: 100;
+  font-family: reckless;
+}
+main .content p {
+  font-size: 1.2rem;
+  color: white;
+}
+main .content .button {
+  padding: 1.4rem 2rem;
+  width: 13vw;
+  height: fit-content;
+  border-radius: 2rem;
+  color: white;
+  background-color: #282750;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+main .sec1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #FBF9EB;
+  padding: 10vh 1rem 1rem 1rem;
+}
+main .sec1 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  font-family: reckless;
+  align-items: center;
+  padding: 2rem;
+}
+main .sec1 .top h1 {
+  width: 59%;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+  font-style: italic;
+}
+main .sec1 .top .bo {
+  width: fit-content;
+  background-color: #DAAEEA;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transform: rotate(-2deg);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sec1 .top .bo h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+  display: none;
+}
+main .sec1 .top .bo p {
+  padding: 0rem 0.5rem;
+  height: 8vh;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: midnight;
+}
+main .sec1 .bottom {
+  padding: 1rem;
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  gap: 1rem;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+main .sec1 .bottom .box {
+  height: 70vh;
+  width: 20%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .sec1 .bottom .box .top {
+  padding: 1rem;
+  height: 72%;
+  gap: 1rem;
+  width: 100%;
+  background-color: #C1EE91;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+main .sec1 .bottom .box .top .heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .sec1 .bottom .box .top .heading .he {
+  background-color: white;
+  padding: 0.4rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+main .sec1 .bottom .box .top .heading .he h1 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900;
+}
+main .sec1 .bottom .box .top .heading .rating {
+  display: flex;
+  gap: 0.4rem;
+}
+main .sec1 .bottom .box .top .img {
+  width: 100%;
+  height: 62%;
+  transition: all 0.3s ease;
+}
+main .sec1 .bottom .box .top .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .sec1 .bottom .box .top .img:hover {
+  transform: scale(1.2);
+}
+main .sec1 .bottom .box .top .add {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+}
+main .sec1 .bottom .box .top .add .a {
+  background-color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.4rem;
+  border: 1px solid black;
+}
+main .sec1 .bottom .box .top .add .a .plus {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+main .sec1 .bottom .box .botto {
+  width: 100%;
+  height: 28%;
+  font-family: reckless;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+main .sec1 .bottom .box .botto h1 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+main .sec1 .bottom .box .botto .b {
+  opacity: 0.5;
+}
+main .sec1 .btton {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+main .sec1 .btton button {
+  padding: 1rem 4rem;
+  color: white;
+  background-color: #2A2857;
+  border-radius: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+main .sec1 .line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+main .sec2 {
+  background-color: #FBF9EB;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 10rem 10rem 15rem 10rem;
+}
+main .sec2 hr {
+  font-weight: 900;
+  background-color: black;
+}
+main .sec2 .discover {
+  transform: rotate(-2deg);
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  background-color: #FF7F31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sec2 .discover p {
+  padding: 0rem 0.3rem;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: midnight;
+  font-weight: 900;
+}
+main .sec2 .search {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .sec2 .search .text {
+  font-size: 3.9rem;
+  width: 70%;
+  font-style: italic;
+  font-family: reckless;
+}
+main .sec2 .search .input {
+  width: 40%;
+  height: 5rem;
+}
+main .sec2 .search .input input {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  padding-left: 3rem;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: reckless;
+  opacity: 0.5;
+}
+main .sec2 .vibe {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .sec2 .vibe p {
+  font-size: 1rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+main .sec2 .vibe .dabbe {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .sec2 .vibe .dabbe .dabba {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 1rem;
+}
+main .sec2 .vibe .dabbe .dabba div {
+  border: 1px solid black;
+  font-family: reckless;
+  text-transform: capitalize;
+  font-size: 2.2rem;
+  font-weight: 500;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 3.5rem;
+  width: 100%;
+  width: fit-content;
+  background-color: #DAEAFF;
+}
+main .sec3 {
+  height: 200%;
+  position: relative;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 11rem;
+  align-items: center;
+  background-image: url(//www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=2560);
+}
+main .sec3 .box {
+  width: 12vw;
+  height: 12vw;
+  background-color: #B6E242;
+  border-radius: 50%;
+  position: absolute;
+  right: 10%;
+  bottom: 92.5%;
+  border: 2px solid black;
+}
+main .sec3 .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15rem;
+  font-weight: 900;
+  font-family: midnight;
+  text-transform: uppercase;
+  width: 50%;
+  text-align: center;
+  line-height: 0.9;
+}
+main .sec3 .text h1 {
+  font-size: 12vw;
+  text-align: center;
+}
+main .sec3 .t2 {
+  width: 90%;
+  display: flex;
+  padding: 1rem 4rem;
+  justify-content: center;
+  align-items: center;
+  font-family: reckless;
+  text-align: center;
+}
+main .sec3 .t2 p {
+  font-size: 3.2rem;
+  font-weight: 100;
+}
+main .sec3 .i {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
+}
+main .sec3 .i img {
+  height: 7vw;
+}
+main .sec3 .i .img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+main .sec3 .i .img .t {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main .sec3 .button {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  border: 1px solid black;
+}
+main .sec4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem;
+  gap: 2rem;
+  background-color: #FBF9EB;
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .sec4 .review {
+  transform: rotate(-2deg);
+  height: fit-content;
+  width: fit-content;
+  padding: 0 0.2rem;
+  background-color: #73BC25;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-family: midnight;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  font-weight: bolder;
+}
+main .sec4 .love h1 {
+  font-size: 3.9rem;
+  font-style: italic;
+  width: 75%;
+  font-weight: 100;
+  font-family: reckless;
+}
+main .boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+main .boxes .chij {
+  height: 50vh;
+  width: 18vw;
+  background-color: #F5AF8A;
+  border-radius: 0.7rem;
+  border: 1px solid black;
+  padding: 1rem;
+}
+main .boxes .chij .upper {
+  height: 75%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .boxes .chij .upper .top1 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: reckless;
+}
+main .boxes .chij .upper .top2 {
+  opacity: 0.5;
+}
+main .boxes .chij .nicche {
+  height: 25%;
+  background-color: #EA6D44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+main .boxes .chij .nicche .i {
+  padding-left: 1rem;
+  height: 4rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .boxes .chij .nicche .i img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+main .boxes .chij .nicche .line {
+  width: 1px;
+  height: 100%;
+  background-color: black;
+}
+main .boxes .chij .nicche .cen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+main .boxes .chij .nicche .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 40%;
+  background-color: white;
+  text-align: center;
+  border-radius: 1.1rem;
+  border: 1px solid black;
+  font-family: reckless;
+  font-size: 1.2rem;
+}
+main .sec5 {
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+main .sec5 .img {
+  width: 50%;
+  height: 100%;
+}
+main .sec5 .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .sec5 .text {
+  width: 50%;
+  height: 100%;
+  background-color: #2A2857;
+  color: white;
+  font-family: reckless;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 4rem;
+  gap: 2rem;
+}
+main .sec5 .text h1 {
+  font-size: 5.5rem;
+  font-weight: 300;
+}
+main .sec5 .text h5 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  width: 70%;
+}
+main .sec5 .text button {
+  padding: 1rem 2rem;
+  width: 35%;
+  background-color: white;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+}
+main .sec6 {
+  background-color: #9F6429;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 1.5rem;
+}
+main .sec6 .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  gap: 0.7rem;
+  height: 40%;
+}
+main .sec6 .top .outlatte {
+  height: 3.5rem;
+  width: fit-content;
+  font-family: midnight;
+  background-color: #fad2ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  transform: rotate(-2deg);
+  opacity: 0.8;
+}
+main .sec6 .top .outlatte h1 {
+  font-size: 3.7rem;
+  text-align: center;
+}
+main .sec6 .top .t {
+  color: white;
+  font-family: midnight;
+}
+main .sec6 .top .t h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+main .sec6 .top .sub {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+}
+main .sec6 .bottom {
+  height: 58%;
+  background-color: #FFCB96;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  display: flex;
+  gap: 2rem;
+}
+main .sec6 .bottom .im {
+  height: 100%;
+  width: 55%;
+  position: relative;
+}
+main .sec6 .bottom .i {
+  position: absolute;
+  bottom: 10%;
+  left: 2%;
+  height: 100%;
+}
+main .sec6 .bottom .i img {
+  height: 102%;
+  width: 102%;
+  object-fit: cover;
+}
+main .sec6 .bottom .side {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+}
+main .sec6 .bottom .side .nice {
+  font-family: midnight;
+  background-color: #F09F54;
+  height: 3.5rem;
+  width: 15%;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-2deg);
+}
+main .sec6 .bottom .side .nice h1 {
+  font-size: 3.5rem;
+}
+main .sec6 .bottom .side .m h1 {
+  font-size: 3.5rem;
+  font-family: reckless;
+  font-weight: 100;
+}
+main .sec6 .bottom .side .p {
+  width: 50%;
+}
+main .sec6 .bottom .side .p p {
+  font-size: 1.5rem;
+}
+main .sec6 .bottom .side button {
+  padding: 1rem 1.5rem;
+  width: 30%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+}
+main .sec7 {
+  width: 100%;
+  background-color: #FBF9EB;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 2rem;
+}
+main .sec7 .upp {
+  padding: 7rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+}
+main .sec7 .upp .journal {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background-color: #FFB500;
+  font-family: midnight;
+  padding: 0 0.3rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  transform: rotate(-2deg);
+}
+main .sec7 .upp .journal h1 {
+  font-size: 3.5rem;
+}
+main .sec7 .upp .text {
+  font-size: 4rem;
+  font-family: reckless;
+  width: 90%;
+  font-weight: 100;
+  font-style: italic;
+}
+main .sec7 .down {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+}
+main .sec7 .down .ingri {
+  height: 45vh;
+  width: 20%;
+  border-radius: 1rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+main .sec7 .down .ingri .img {
+  position: relative;
+  height: 85%;
+  width: 100%;
+  background-color: #2A2857;
+  overflow: hidden;
+  transition: all 1s ease;
+  flex-shrink: 0;
+}
+main .sec7 .down .ingri .img .head {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  bottom: 85;
+  z-index: 10;
+  background-color: white;
+  height: 1.7rem;
+  width: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: midnight;
+  border-radius: 0.3rem;
+  border: 1px solid black;
+}
+main .sec7 .down .ingri .img .head h4 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+main .sec7 .down .ingri .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.1s ease;
+}
+main .sec7 .down .ingri .img:hover img {
+  transform: scale(1.1);
+}
+main .sec7 .down .ingri .img:hover .head {
+  transform: rotate(-3deg);
+}
+main .sec7 .down .ingri .te {
+  background-color: #C0DBFF;
+  width: 100%;
+  height: 15%;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0.5rem 1rem;
+  word-spacing: 5px;
+}
+main .sec7 .explorer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+}
+main .sec7 .explorer button {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  color: white;
+  background-color: #2A2857;
+  border-radius: 2rem;
+  border: 1px solid black;
+  font-size: 1rem;
+}
+main .sec8 {
+  width: 100%;
+  height: 80%;
+  background-color: #00A3D9;
+  overflow: hidden;
+}
+main .sec8 img {
+  height: 100%;
+  width: 110%;
+  object-fit: cover;
+  object-position: center;
+}
+main footer {
+  width: 100%;
+  min-height: 100%;
+  background-color: #C0DBFF;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main footer .h {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  padding-left: 10rem;
+}
+main footer .h h1 {
+  font-family: midnight;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+main footer .h p {
+  font-size: 2.2rem;
+  font-family: reckless;
+  opacity: 0.7;
+  width: 50%;
+}
+main footer .in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+main footer .in .input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+main footer .in .input input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0 1rem;
+  height: 3.5rem;
+  width: 28vw;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}
+main footer .in .input button {
+  padding: 0.9rem 3.5rem;
+  background-color: #282750;
+  color: white;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+main footer .in .social {
+  width: 30%;
+  display: flex;
+  gap: 1.5rem;
+}
+main footer .in .social .bo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+main footer .in .social .bo .icon {
+  font-size: 2rem;
+}
+main footer .vari {
+  padding: 2rem;
+  background-color: #282750;
+  color: white;
+  border-radius: 0.5rem;
+  font-family: reckless;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+main footer .vari .con {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main footer .vari .con h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+main footer .vari .con ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+main footer .vari .con ul li {
+  opacity: 0.5;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+main footer .vari hr {
+  display: none;
+}
+main footer .last {
+  position: relative;
+}
+main footer .last .logo {
+  height: 20%;
+  position: absolute;
+  top: 10%;
+  left: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main footer .last .hills {
+  width: fit-content;
+  height: fit-content;
+}
+main footer .last .hills img {
+  height: 20%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (max-width: 1000px) {
+  main .main {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    gap: 0;
+  }
+  main .main .nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 0.5rem;
+  }
+  main .main .nav nav {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .main .nav nav .left {
+    justify-content: flex-end;
+    width: 15%;
+  }
+  main .main .nav nav .left ul {
+    display: none;
+  }
+  main .main .nav nav .left .menu {
+    display: block;
+  }
+  main .main .nav nav .right {
+    width: 15%;
+  }
+  main .main .nav nav .right ul {
+    display: none;
+    font-size: 4rem;
+  }
+  main .main .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    padding-left: 2rem;
+  }
+  main .main .content h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  main .main .content p {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  main .main .content .button {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0.8rem 2rem;
+  }
+  main .sec1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #FBF9EB;
+    padding: 1rem;
+  }
+  main .sec1 .top {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    gap: 4rem;
+    font-family: reckless;
+    text-align: center;
+    padding: 1rem;
+  }
+  main .sec1 .top h1 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    font-style: italic;
+    width: 100%;
+  }
+  main .sec1 .top .bo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0rem;
+    width: 100%;
+    border: none;
+    background-color: #FBF9EB;
+  }
+  main .sec1 .top .bo div {
+    padding: 0.5rem 0rem;
+    width: 60%;
+    background-color: #DAAEEA;
+    border-radius: 0.3rem;
+    border: 1px solid black;
+  }
+  main .sec1 .top .bo div h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.7rem;
+    display: block;
+  }
+  main .sec1 .top .bo p {
+    display: none;
+  }
+  main .sec1 .top .line {
+    height: 1px;
+  }
+  main .sec1 .bottom {
+    position: relative;
+    padding: 1rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    gap: 1rem;
+    overflow: scroll;
+    flex-wrap: nowrap;
+  }
+  main .sec1 .bottom .box {
+    height: 70vh;
+    width: 90%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  main .sec1 .bottom .box .top {
+    padding: 1rem;
+    height: 72%;
+    width: 100%;
+    gap: 1rem;
+    background-color: #C1EE91;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+  }
+  main .sec1 .bottom .box .top .heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .sec1 .bottom .box .top .heading .he {
+    background-color: white;
+    padding: 0.4rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+  }
+  main .sec1 .bottom .box .top .heading .he h1 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+  }
+  main .sec1 .bottom .box .top .heading .rating {
+    display: flex;
+    gap: 0.4rem;
+  }
+  main .sec1 .bottom .box .top .img {
+    width: 100%;
+    height: 66%;
+  }
+  main .sec1 .bottom .box .top .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main .sec1 .bottom .box .top .add {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+  }
+  main .sec1 .bottom .box .top .add .a {
+    background-color: white;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.4rem;
+    border: 1px solid black;
+  }
+  main .sec1 .bottom .box .top .add .a .plus {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  main .sec1 .bottom .box .botto {
+    width: 100%;
+    height: 28%;
+    font-family: reckless;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  main .sec1 .bottom .box .botto h1 {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+  main .sec1 .bottom .box .botto .b {
+    opacity: 0.5;
+  }
+  main .sec2 {
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    padding: 1rem 1rem 5rem 1rem;
+  }
+  main .sec2 .discover p {
+    font-size: 2rem;
+  }
+  main .sec2 .search {
+    width: 100%;
+  }
+  main .sec2 .search .text {
+    font-size: 2.2rem;
+    width: 100%;
+  }
+  main .sec2 .search .input {
+    width: 100%;
+  }
+  main .sec2 .vibe .dabbe .dabba {
+    flex-wrap: wrap;
+  }
+  main .sec3 {
+    width: 100%;
+    height: 150%;
+    gap: 6rem;
+  }
+  main .sec3 .box {
+    bottom: 94%;
+    height: 23vw;
+    width: 23vw;
+  }
+  main .sec3 .text {
+    padding-top: 7rem;
+  }
+  main .sec3 .text h1 {
+    font-size: 5rem;
+  }
+  main .sec3 .t2 {
+    padding: 0 1rem;
+    width: 100%;
+  }
+  main .sec3 .t2 p {
+    font-size: 2rem;
+  }
+  main .sec3 .i img {
+    height: 20vw;
+  }
+  main .sec3 .i .img {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  main .sec3 .i {
+    gap: 0.5rem;
+  }
+  main .sec3 .button {
+    width: 90%;
+  }
+  main .sec4 {
+    display: flex;
+    overflow-x: auto;
+    flex-direction: column;
+    padding: 4rem 1rem;
+  }
+  main .sec4 .love {
+    display: none;
+  }
+  main .sec4 .top {
+    padding: 0;
+    gap: 0;
+  }
+  main .sec4 .top .review {
+    font-size: 2rem;
+  }
+  main .sec4 .boxes {
+    display: flex;
+    justify-content: normal;
+    width: 100%;
+  }
+  main .sec4 .boxes .chij {
+    height: 50vh;
+    width: 80%;
+    flex-shrink: 0;
+  }
+  main .sec5 {
+    display: block;
+    gap: 1rem;
+  }
+  main .sec5 .img {
+    width: 100%;
+    height: 50%;
+  }
+  main .sec5 .text {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  main .sec5 .text h1 {
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  main .sec5 .text h5 {
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  main .sec5 .text button {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+  }
+  main .sec6 {
+    height: 130%;
+    gap: 4rem;
+  }
+  main .sec6 .top {
+    height: 30%;
+  }
+  main .sec6 .top .outlatte h1 {
+    font-size: 2.5rem;
+  }
+  main .sec6 .top .t {
+    text-align: center;
+  }
+  main .sec6 .top .t h1 {
+    font-size: 3.5rem;
+  }
+  main .sec6 .bottom {
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    display: block;
+  }
+  main .sec6 .bottom .im {
+    height: 35%;
+  }
+  main .sec6 .bottom .i {
+    width: 100%;
+    left: 0;
+  }
+  main .sec6 .bottom .i img {
+    height: 130%;
+    width: 130%;
+    object-fit: cover;
+    object-position: right;
+    aspect-ratio: 338/348 !important;
+  }
+  main .sec6 .bottom .side {
+    padding: 0;
+    padding-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.9rem;
+  }
+  main .sec6 .bottom .side .nice {
+    width: 25%;
+    height: 2rem;
+  }
+  main .sec6 .bottom .side .nice h1 {
+    font-size: 2rem;
+  }
+  main .sec6 .bottom .side .m h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  main .sec6 .bottom .side .p {
+    width: 100%;
+    text-align: center;
+  }
+  main .sec6 .bottom .side .p p {
+    font-size: 1rem;
+  }
+  main .sec6 .bottom .side button {
+    width: 60%;
+    padding: 0.7rem 1rem;
+  }
+  main .sec7 {
+    padding: 1rem;
+  }
+  main .sec7 .upp {
+    padding: 1rem;
+  }
+  main .sec7 .upp .journal {
+    height: 2rem;
+  }
+  main .sec7 .upp .journal h1 {
+    font-size: 2rem;
+  }
+  main .sec7 .upp .text {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 100%;
+  }
+  main .sec7 .down .ingri {
+    width: 50%;
+  }
+  main .sec7 .down .ingri .te {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 0;
+    font-size: 0.8rem;
+  }
+  main .sec7 .explorer button {
+    width: 80%;
+  }
+  main footer {
+    padding: 3rem 1rem;
+  }
+  main footer .h {
+    padding: 0;
+  }
+  main footer .h h1 {
+    font-weight: 200;
+  }
+  main footer .h p {
+    width: 100%;
+  }
+  main footer .in {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+  }
+  main footer .in .input {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+  main footer .in .input input {
+    width: 100%;
+  }
+  main footer .in .input button {
+    width: 100%;
+  }
+  main footer .in .social {
+    width: 100%;
+  }
+  main footer .vari {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  main footer .vari .con h1 {
+    font-size: 2.5rem;
+  }
+  main footer .vari .con ul {
+    display: none;
+  }
+  main footer .vari hr {
+    opacity: 0.2;
+  }
+  main footer .last {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main footer .last .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 60%;
+    position: static;
+  }
+  main footer .last .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
