@@ -543,14 +543,20 @@
                     flex-shrink: 0;
                     
                     .text{
+                        display: flex;
+                        align-items: center;
+                        // height: 10%;
+                        // font-size: 2rem;
+
                     .link{
+                     
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         padding: 5rem 10rem;
                         background-color: #fd0505;
                         a{
-                            font-size: 2rem;
+                            // font-size: 4rem;
                         }
                     }
                     a{

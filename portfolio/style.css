@@ -456,15 +456,16 @@ main footer .social .img img:hover {
   main #projects .box {
     flex-shrink: 0;
   }
+  main #projects .box .text {
+    display: flex;
+    align-items: center;
+  }
   main #projects .box .text .link {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5rem 10rem;
     background-color: #fd0505;
-  }
-  main #projects .box .text .link a {
-    font-size: 2rem;
   }
   main #projects .box .text a {
     font-size: 2rem;
