@@ -53,6 +53,11 @@ f.addEventListener("submit",(e)=>{
     
     e.preventDefault();
     let text=e.target[0].value;
+    if(text.trim()==="")
+    {
+        alert("enter text")
+        return;
+    }
     let completed=e.target[1].value.toLowerCase();
     let compans;
     if(completed==="completed")
