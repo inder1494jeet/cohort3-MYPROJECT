@@ -33,18 +33,10 @@ nav h1 {
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
 }
-nav .right {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-}
 nav .right .b {
-  height: 2rem;
-  width: 2rem;
+  height: 20px;
+  width: 20px;
   color: black;
-  background-color: black;
-  border-radius: 50%;
 }
 nav .right .addtask {
   padding: 1rem 3rem;
@@ -54,7 +46,6 @@ nav .right .addtask {
   color: white;
   border: none;
   font-size: 1.2rem;
- 
 }
 
 main {
@@ -191,4 +182,4 @@ form button {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.csss.map */

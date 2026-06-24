@@ -1,8 +1,55 @@
 const addtask=document.querySelector(".addtask")
+const main=document.querySelector("main")
 const formbox=document.querySelector(".form")
 let f =document.querySelector("form")
 let taskbox=document.querySelector(".task-box")
+// let task=document.querySelector(".task")
+let theme=document.querySelector(".b")
 let userdata=JSON.parse(localStorage.getItem("data")) || [];
+let val= JSON.parse(localStorage.getItem("theme"))||{}
+let t; 
+// console.log(localStorage.getItem("theme"))
+// window.addEventListener("mouseover",)
+// window.innerHTML="black"
+        
+        theme.style.backgroundColor=val.theme
+        document.querySelector("body").style.backgroundColor=val.body;
+        taskbox.style.backgroundColor=val.taskbox
+theme.addEventListener("click",(e)=>{
+        // theme.style.backgroundColor="blue"
+    if(t==="black")
+    {
+        t="light";
+        theme.style.backgroundColor="white"
+        document.querySelector("body").style.backgroundColor="black";
+        taskbox.style.backgroundColor="rgb(38, 37, 37)"
+        // task.style.boxShadow="none"
+         val={
+            theme:"white",
+            body:"black",
+            taskbox:"rgb(38, 37, 37)",
+        
+
+        }
+        localStorage.setItem("theme",JSON.stringify(val) );
+        // console.log(localStorage.getItem("theme"));
+}
+else{
+    t="black";
+        theme.style.backgroundColor="black"
+        document.querySelector("body").style.backgroundColor="whitesmoke";
+        taskbox.style.backgroundColor="white"
+        // task.style.boxShadow="none"
+          val={
+            theme:"black",
+            body:"whitesmoke",
+            taskbox:"white",
+        
+
+        }
+        localStorage.setItem("theme",JSON.stringify(val));
+}
+})
 
 let upval=null;
 addtask.addEventListener("click",()=>{
