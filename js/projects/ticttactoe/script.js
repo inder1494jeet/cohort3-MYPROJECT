@@ -41,7 +41,7 @@ let tie=()=>{
 }
 function checkwinner(){
     let ba=false;
-    winpatter.forEach((p)=>{
+    for (p of winpatter){
         // console.log(e)
        const [a,b,c]=p;
        const v1=child[a].textContent;
@@ -75,8 +75,8 @@ function checkwinner(){
        }
       
        
-    })
-  return b;
+    }
+  return ba;
 }
 parent.addEventListener("click",(e)=>{
     if(e.target.textContent!=="")
