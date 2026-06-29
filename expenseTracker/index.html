@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="login">
+        <div class="logbox">
+            <h2>Welcome Back </h2>
+            <p class="logtext">Login to ExpenseTracker</p>
+           <div class="loginp"> 
+            <label for="uname">Username</label>
+            <input type="text"  id="uname" required>
+             <label for="pass">Password</label>
+            <input type="password" id="pass">
+            <input type="button" value="Login" class="loginbtn" required>
+        </div>
+            <p class="reg">Don't have an account? <span class="regs">Register here</span></p>
+        </div>
+    </div>
+      <div class="register">
+        <div class="regbox">
+            <h2>Create Account</h2>
+            <p class="regtext">Join ExpenseTracker</p>
+           <div class="reginp"> 
+            <label for="username">Choose a Username</label>
+            <input type="text"  id="username" required>
+             <label for="password">Password</label>
+            <input type="password" id="password">
+            <input type="button" value="Register" class="regbtn" >
+        </div>
+            <p class="log">Already have an account? <span class="logs">Login here</span></p>
+        </div>
+    </div>
+
+
+<div class="main">
+<div class="nav">
+    <div class="top">
+        <div class="logo">
+            <img src="./align-bottom-svgrepo-com.svg" alt="logo">
+            <div class="text">
+                <h2>ExpenseTrack</h2>
+                <p>Enterprise Finance</p>
+            </div>
+        </div>
+        <div class="das">
+            <div class="dash">Dashboard</div>
+            <div class="setting">Settings</div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="add">
+            Add Transaction
+        </div>
+    </div>
+</div>
+<div class="right">
+    <div class="topnav">
+        <div></div>
+        
+        <div class="name">
+            <div class="line"></div>
+            <h3 class="n">hellooo</h3>
+            <p class="logout">Logout</p>
+        </div>
+    </div>
+   <div class="transaction">
+    <div>
+        <p class="financial">Financial Overview</p>
+        <p class="real">Real-time tracking application</p>
+
+    </div>
+    <div class="tracker">
+        <div class="currbalance">
+            <div class="img"><i class="ri-bank-fill"></i></div>
+           <div>
+             <p>Current Balance</p>
+            <h1 class="cbal">$0</h1>
+           </div>
+        </div>
+            <div class="tincome">
+                 <div class="img"><i class="ri-arrow-right-up-long-line" style="color: green;"></i></div>
+           <div>
+             <p>Total Income</p>
+            <h1 class="tinc">$0</h1>
+           </div>
+            </div>
+                <div class="texpense">
+                         <div class="img"><i class="ri-arrow-right-down-long-line" style="color: darkred;"></i></div>
+           <div>
+             <p>Total Expense</p>
+            <h1 class="texp">$0</h1>
+           </div>
+                </div>
+                    <div class="ttransaction">
+                          <div class="img"><i class="ri-safe-2-fill"></i></div>
+           <div>
+             <p>Total Transaction</p>
+            <h1 class="ttrans">0</h1>
+           </div>
+                    </div>
+
+    </div>
+   </div>
+   <div class="cashflow">
+    <div class="cash">
+        <canvas id="chart"></canvas>
+    </div>
+    <div class="prefrence">
+        <h1>Preferences</h1>
+        <div class="mode">
+            <h4>Mode</h4>
+            <i class="ri-sun-fill"></i>
+        </div>
+        <hr>
+        <button class="reset">Reset All Data</button>
+    </div>
+   </div>
+   <div class="alltransaction">
+    <div class="trans">
+        <h1>All Transactions</h1>
+        <div class="search">
+            <div class="s">
+             <input type="text" placeholder="search transactions....">
+            </div>
+            <div class="type">
+                <select  id="type">
+                    <option value="all" >All Types</option>
+                    <option value="income">All Income</option>
+                     <option value="expense">All Expense</option>
+                </select>
+            </div>
+        </div>
+        <div class="roles">
+            <div class="des">
+                <p>Date</p>
+                <p>Description</p>
+                <p>Category</p>
+                <p>Amount</p>
+                <p>Actions</p>
+                </div>
+           
+                <div class="r">
+                
+                </div>
+        </div>
+    </div>
+   </div>
+</div>
+</div>
+<div class="overlay">
+  <div class="modal">
+    <button class="close">×</button>
+
+    <h2>Add Transaction</h2>
+
+    <form>
+      <label>Type</label>
+      <select  name="type" required>
+        <option>Expense</option>
+        <option>Income</option>
+      </select>
+
+      <label>Description</label>
+      <input type="text" name="desc"  placeholder="e.g. Amazon, Salary, Coffee" required>
+
+      <div class="row">
+        <div>
+          <label>Amount</label>
+          <input type="number" required name="amount">
+        </div>
+
+        <div>
+          <label>Date</label>
+          <input type="date" value="2026-06-28"  name="number" required>
+        </div>
+      </div>
+
+      <label>Category</label>
+      <select name="category" required>
+        <option>Select a category</option>
+        <option>Food</option>
+        <option>Shopping</option>
+        <option>Salary</option>
+         <option>Other</option>
+      </select>
+
+      <button type="submit" class="save-btn">Save Transaction</button>
+    </form>
+  </div>
+</div>
+
+<div class="settings">
+
+    <h1>Settings</h1>
+    <p class="subtitle">
+        Manage your account profile and app formatting.
+    </p>
+
+    <div class="settings__card">
+
+        <h2>Profile Details</h2>
+
+        <div class="settings__form">
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input class="changename" type="text" placeholder="inderjeetsingh">
+            </div>
+
+            <div class="input-group">
+                <label>Primary Currency</label>
+
+                <select class="currency" name="rupee">
+                    <option>$</option>
+                    <option>₹</option>
+                    <option>€</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button class="settingchanges">Save Changes</button>
+
+    </div>
+
+</div>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
