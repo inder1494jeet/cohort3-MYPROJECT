@@ -23,6 +23,8 @@ const pausebtn=document.querySelector("#pause")
 const timerem=document.querySelector(".timeremaning")
 const timerline=document.querySelector(".line")
 const quote=document.querySelector("#quoteModal")
+const q=document.querySelector("#quote")
+
 const quotebtn=document.querySelector("#thoughts")
 const quoteclose=document.querySelector("#closeQuote")
 const quotevalue=document.querySelector("#quotevalue")
@@ -455,9 +457,11 @@ theme.addEventListener("click",()=>{
    if(isdark)
    {
     timerclass.classList.add("theme")
+    q.classList.add("theme")
    }
    else{
      timerclass.classList.remove("theme")
+     q.classList.remove("theme")
    }
 })
 timer.addEventListener("click",()=>{
@@ -518,9 +522,9 @@ pausebtn.addEventListener("click",()=>{
     t=null;
     
 })
-todo.addEventListener("click",()=>{
-    window.location.href = "./project3/index.html";
-})
+// todo.addEventListener("click",()=>{
+//     window.location.href = "./project3/index.html";
+// })
 quotebtn.addEventListener("click",()=>{
     bottom.style.display="none";
     quote.style.display="flex"
