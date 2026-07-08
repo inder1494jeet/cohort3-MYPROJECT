@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+    <main class="transition-all duration-500 ease-in-out h-screen w-screen justify-center items-center flex flex-col p-2 bg-[url('https://images.unsplash.com/photo-1579762593217-46655e4e7efc?q=80&w=1217&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+        <nav  class="h-[10rem] w-full flex justify-center items-center">
+            <h1 class="text-shadow-lg text-5xl font-black bg-linear-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent">Productive Dashboard</h1>
+        </nav>
+        <div id="bottom" class=" flex-1 w-full  flex justify-between items-center p-[2rem] transition-all duration-500 ease-in-out">
+            <div class="weather h-[350px] w-[500px] bg-white/20 backdrop-blur-xs rounded-xl p-[1rem]">
+               <div class="t flex h-[4rem]  justify-between  items-center p-[2rem]">
+                <div class="ti flex items-center flex-col">
+                     <div class="time text-3xl font-bold"> <span>am</span></div>
+                 <div class="date text-sm font-lightbold"> 16/3/2022</div>
+                </div>
+                <div class="img h-[4rem] w-[4rem] " >
+                    <img  id="imgcl" src="" alt="">
+                </div>
+
+               </div>
+               <div class="temp grid grid-rows-2 grid-cols-2 h-[calc(350px-4rem)] place-items-center    ">
+                <div class=" h-[5rem] w-[10rem] bg-red-500 bg-white/10 backdrop-blur-xs rounded-xl flex flex-col justify-center items-center"><h1 class="font-bold text-2xl cond">Patch Rain</h1>
+<p>Weather</p></div>
+                <div class=" h-[5rem] w-[10rem] bg-red-500 bg-white/10 backdrop-blur-xs rounded-xl flex flex-col justify-center items-center"><h1 class="font-bold text-2xl humi">73%</h1>
+<p>Humidity</p></div>
+                <div class=" h-[5rem] w-[10rem] bg-red-500 bg-white/10 backdrop-blur-xs rounded-xl flex flex-col justify-center items-center"><h1 class="font-bold text-2xl wind">11.9 km</h1>
+<p>Wind</p></div>
+                <div class=" h-[5rem] w-[10rem] bg-red-500 bg-white/10 backdrop-blur-xl rounded-xl flex flex-col justify-center items-center">
+<h1 class="font-bold text-2xl temprature">28.8 c</h1>
+<p>Temperature</p>
+                </div>
+               </div>
+
+            </div>
+            <div class="value w-[100px] h-full  flex flex-col items-center p-4 justify-evenly">
+              
+                <div class="h-[4rem] w-[4rem] bg-[#a39b8b] rounded-full flex justify-center items-center cursor-pointer" id="theme">
+                    <i class="ri-moon-fill text-3xl "></i>
+                </div>
+                 <div class="h-[4rem] w-[4rem] bg-[#a39b8b] rounded-full flex justify-center items-center cursor-pointer" id="github">
+               <i class="ri-github-fill text-3xl "></i>
+                </div>
+                 <div class="h-[4rem] w-[4rem] bg-[#a39b8b] rounded-full flex justify-center items-center cursor-pointer " id="timer">
+                   <i class="ri-timer-fill text-3xl "></i>
+                </div>
+                 <div class="h-[4rem] w-[4rem] bg-[#a39b8b] rounded-full flex justify-center items-center cursor-pointer" id="thoughts">
+                 <i class="ri-double-quotes-l text-3xl "></i>
+                </div>
+                 <div class="h-[4rem] w-[4rem] bg-[#a39b8b] rounded-full flex justify-center items-center cursor-pointer" id="todo">
+                    <i class="ri-calendar-todo-fill text-3xl "></i>
+                </div>
+                
+
+               
+                
+            </div>
+        </div>
+   <div class="timer hidden w-[600px] bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-8 relative flex flex-col transition-all duration-300">
+
+    <!-- Close -->
+    <button
+        id="close"
+        class="absolute top-5 right-5 w-9 h-9 flex items-center justify-center rounded-full
+        text-gray-500 dark:text-gray-300
+        hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+        ✕
+    </button>
+
+    <!-- Header -->
+    <div class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">
+            Focus Session
+        </h2>
+
+        <p class="text-sm text-gray-500 dark:text-gray-300 mt-1">
+            Stay focused for the next 30 minutes.
+        </p>
+    </div>
+
+    <!-- Circle -->
+    <div class="flex justify-center mb-8">
+
+        <div
+            class="relative h-56 w-56 rounded-full border-[12px] border-indigo-200 dark:border-gray-600 flex items-center justify-center">
+
+            <!-- Progress Ring -->
+            <div
+                class="absolute inset-0 rounded-full border-[12px] border-transparent border-t-indigo-600 rotate-45">
+            </div>
+
+            <!-- Time -->
+            <div class="text-center">
+
+                <h1 class="text-5xl font-bold text-gray-900 dark:text-white tracking-tight timeremaning">
+                    30:00
+                </h1>
+
+                <p class="text-gray-500 dark:text-gray-300 text-sm mt-2">
+                    Remaining
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Progress -->
+    <div class="mb-8">
+
+        <div class="flex justify-between text-sm text-gray-500 dark:text-gray-300 mb-2">
+            <span>0 min</span>
+            <span>30 min</span>
+        </div>
+
+        <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+            <div class="w-full h-full bg-indigo-600 rounded-full line transition-all duration-500"></div>
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <div class="flex justify-center gap-3">
+
+        <button
+            id="pause"
+            class="px-5 h-11 rounded-xl border border-gray-200 dark:border-gray-600
+            text-gray-800 dark:text-white
+            hover:bg-gray-100 dark:hover:bg-gray-700
+            transition font-medium">
+            Pause
+        </button>
+
+        <button
+            id="reset"
+            class="px-5 h-11 rounded-xl border border-gray-200 dark:border-gray-600
+            text-gray-800 dark:text-white
+            hover:bg-gray-100 dark:hover:bg-gray-700
+            transition font-medium">
+            Reset
+        </button>
+
+        <button
+            id="startbtn"
+            class="px-5 h-11 rounded-xl bg-indigo-600 text-white
+            hover:bg-indigo-700 transition font-medium shadow-md">
+            Start
+        </button>
+
+    </div>
+
+</div>
+<div id="quoteModal" class="h-screen hidden flex items-center justify-center">
+
+    <div class="relative w-[420px] min-h-[400px] rounded-3xl bg-white shadow-2xl p-8 flex flex-col justify-center gap-5">
+
+        <!-- Close Button -->
+        <button
+            id="closeQuote"
+            class="absolute top-5 right-5 h-10 w-10 rounded-full bg-gray-100 text-gray-500 flex items-center justify-center text-xl transition-all duration-300 hover:bg-red-500 hover:text-white hover:rotate-90">
+            ✕
+        </button>
+
+        <!-- Quote Icon -->
+        <span class="absolute top-5 left-6 text-6xl text-amber-500/20 font-bold">
+            ❝
+        </span>
+
+        <!-- Quote -->
+        <p id="quotevalue" class="text-2xl font-semibold leading-10 text-gray-800 mt-6">
+            The only way to do great work is to love what you do.
+        </p>
+
+        <!-- Author -->
+        <h3 id="authorquote" class="self-end italic text-gray-500 text-lg">
+            — Steve Jobs
+        </h3>
+
+        <!-- Reload Button -->
+        <button
+            id="reloadquote"
+            class="absolute bottom-6 right-6 h-12 w-12 rounded-full bg-amber-500 text-white text-2xl flex items-center justify-center shadow-lg transition-all duration-300 hover:rotate-180 hover:scale-110 hover:bg-amber-600 active:scale-95">
+            ↻
+        </button>
+
+    </div>
+
+</div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -78,6 +78,7 @@ if(theme==="dark"){
     mode.classList.add("ri-moon-fill");
 }
 totaltrans.forEach((e)=>{
+    r.innerHTML=" "
     r.innerHTML+=`<div class="role">
                 <p>${e.date}</p>
                 <h4>${e.description}</h4>
